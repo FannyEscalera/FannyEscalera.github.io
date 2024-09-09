@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: RubikBubbles-Regular;
+    src: url(./Rubik_Bubbles/RubikBubbles-Regular.ttf);
+}
+
+
+
+/* Barra de Navegacion*/
+.navbar {
+    padding: 1rem;
+    background-color: black; /* Color de fondo de la barra */
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+    
+}  
+
+.navbar-toggler-icon {
+    background-color: rgb(255, 47, 196);
+}
+
+
+nav ul li{
+    margin: 20px;
+    color: rgb(0, 229, 255); /* Color de los enlaces */
+    font-size: 20px;
+    font-family: RubikBubbles-Regular;
+    text-align: center;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li:hover {
+    color: rgb(179, 255, 0);
+    /* Color de los enlaces al dar click */
+}
+
+nav ul li a {
+    color: rgb(255, 28, 217);
+    /* Color del enlace sobresaliente */
+    text-decoration: none;
+    /* Elimina el subrayado */
+}
+
+nav ul li a:hover {
+    color: rgb(179, 255, 0);
+    /* Color específico para la palabra destacada */
+}
+
+
+
+
+/* Video de fondiu */
+.video-section {
+    position: relative;
+    /*Tamaño del video*/
+    height: 70vh; /*alto*/
+    width: 100%;/*ancho*/
+    overflow: hidden;/* Controlar imágenes o videos que se salen del área del contenedor*/
+}
+
+.video-section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: poppins;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.video-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.video-overlay .btn {
+    font-size: 1.25rem;
+    padding: 10px 20px;
+}
+
+.video-overlay p:nth-of-type(1) {
+    font-size: 1rem; /* Tamaño de letra */
+    color: #ffffff; /* Color del texto */
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+    line-height: 1.2; /* Separacion para mejor legibilidad */
+    max-width: 500px; /* Ancho máximo del párrafo */
+    text-align: center; 
+    font-family: poppins; 
+}
+
+
+
+
+/* Separador */
+.video-background {
+    position: relative;
+    height: 20vh; /* Ajusta la altura del contenedor del video */
+    width: 100%; /* Ancho completo */
+    overflow: hidden; /* Oculta el contenido que se sale del contenedor */
+}
+
+
+
+
+
+
+/* Contenedor de imagenes*/
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; /* Centra verticalmente las cajas dentro del contenedor */
+    padding: 20px;
+    background-image: url('imagenes/degra.jpg'); /* Imagen de fondiu */
+    background-size: cover; /* Para que la imagen cubra todo el contenedor */
+    background-position: center; /* Imagen centrada */
+    background-repeat: no-repeat; /* Que no se repita la imagen */
+    min-height: 100vh; /* El contenedor ocupa masomenos el 100% de la altura de la ventana */
+    gap: 20px;
+}
+
+a {
+    text-decoration: none; /* Quitar subrayado */
+    color: inherit; /* Mantieneel color del texto y no el azul predeterminado */
+}
+
+
+/* Estilos para las cajas */
+.box {
+    flex-basis: calc(25% - 20px); /* Cada caja ocupa el 25% del ancho menos el margen */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Convertir las cajas en contenedores flexibles */
+    flex-direction: column; /* Organiza el contenido en columna */
+    justify-content: center; /* Centra el contenido verticalmente dentro de la caja */
+}
+
+/* Efecto hover en las cajas */
+.box:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la caja de cada item al pasar el mouse */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra más grande */
+}
+
+/* Imágenes dentro de las cajas */
+.box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el título dentro de las cajas */
+.box h1 {
+    font-size: 1.5rem;
+    color: #ff039a;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: RubikBubbles-Regular;
+}
+
+/* Estilo para el párrafo dentro de las cajas */
+.box p {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    font-family: poppins;
+}
+
+
+
+/* Contenedor del reproductor de audio */
+.audio-container {
+    width: 100%; /* Se ajusta al 100% del ancho */
+    display: flex;
+    justify-content: center; /* Centra el reproductor */
+    margin: 20px 0; /* Espacio entre el audio y el footer */
+  }
+  
+  audio {
+    width: 100%; /* El audio ocupa el 100% del ancho del contenedor */
+    max-width: 600px; /* Máximo ancho para pantallas grandes */
+    height: 50px; /* Ajuste de altura del reproductor */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+
+
+/* Footer */
+.footer {
+  position: relative;
+  width: 100%;
+  color: white;
+}
+
+.footer-video-background {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Altura */
+  overflow: hidden;
+}
+
+.footer-video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Video detrás de mi contenido */
+}
+
+.footer-content {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  }
+
+.footer-section {
+  padding: 20px;
+}
+
+
+.footer-section a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Usa el color del texto en lugar del azul */
+    font-size: 14px;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline; /* Color al  pasar el mouse */
+    color: #4cc6f7; 
+    }
+
+
+.footer-section h3 { /* Títulos del pie de página */
+  margin-bottom: 25px; /* Espacio entre el titulo y el parrafo de abajo */
+  font-family: poppins;
+  text-decoration: none;
+  font-size: 19px;
+
+}
+
+.social-links img {
+    width: 35px; /* Ajusta el tamaño de los iconos */
+    height: 35px;
+    margin-right: 10px;
+  }
+   
+
+.footer-logo {
+  width: 150px; /* Tamaño del logo */
+  height: auto;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  background-color: #000000; /* Color de fondo para la sección de derechos de autor */
+  color: #ffffff;
+}
+
+
+
+
+
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 992px) {
+    .box {
+        flex-basis: calc(33.33% - 20px); /* En pantallas medianas, 3 cajas por fila */
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-basis: calc(50% - 20px); /* En pantallas pequeñas, 2 cajas por fila */
+    }
+}
+
+@media (max-width: 576px) {
+    .box {
+        flex-basis: 100%; /* En pantallas muy pequeñas, 1 caja por fila */
+    }
+}
+

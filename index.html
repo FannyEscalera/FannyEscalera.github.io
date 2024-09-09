@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Fanny Escalera">
+    <meta name="description" content="Proyecto Personal de Fanny">
+    <meta name="keyword" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="Width=device-width, initial-scale=1">
+
+    <!--Titulo de Pestaña-->
+    <title>Fanny Escalera Tienda Virtual</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="./imagenes/extraterrestre icono verde.png">
+  
+    <!--Bootstrap para CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--CSS-->
+       <link rel="stylesheet" href="style.css">     
+</head>
+
+
+<body>
+
+
+    <!--Barra de Navegacion-->
+<nav class="navbar navbar-expand-md navbar-light">
+  <div class="container-fluid"> <!--Con Esto se Adapta al Navegador-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <a class="navbar-brand" href="#">
+          <img src="./imagenes/dancing alien.gif" width="85" alt="logo" class="navbar-gif">
+      </a>
+
+      <ul class="navbar-nav d-flex justify-content-center align-items-center">
+        <ul class="nav-item">
+          <!-- Añadir id="nosotros" -->
+          <a class="nav-link active" aria-current="page" href="#nosotros"><li id="nosotros">NOSOTROS</li></a>
+        </ul>
+
+        <ul class="nav-item">
+          <li><a href="https://www.facebook.com/fanny.escalera">PERSONALIZADOS<span class="highlight"></span></a></li>
+        </ul>
+
+        <ul class="nav-item">
+          <a class="nav-link" href="#categorias"><li>CATEGORÍAS</li></a>
+        </ul>
+
+        <ul class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://wa.me/525564997018"><li>CONTACTO</li></a>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!--Video de Fondo-->
+      <section class="video-section">
+        <video autoplay muted loop playsinline>
+            <source src="./imagenes/lava.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+            <h1>¡Saludos, terrícolas!</h1> 
+            <p>Bienvenidos a la tienda virtual más innovadora del cosmos, ¡donde pueden diseñar sus propias playeras personalizadas!</p>
+           <p>🛸</p>
+            <p>🌌 ¡Que su viaje por la moda sea espléndido! 🌌</p>
+            <a href="#" class="btn btn-primary">¡Personaliza tu prenda Aquí!</a>
+        </div>
+    </section>
+
+
+
+
+<!--Contenedor de Imagenes-->
+<div class="container-flex" id="categorias">
+  <div class="box">
+      <a href="caballero.html" target="_blank">
+          <img src="./imagenes/Playera manga normal CABALLERO frente.jpg" alt="Playeras de Caballero">
+          <h1>CABALLERO</h1>
+          <p>🧔🏻</p>
+          <p>Descubre nuestra exclusiva selección de ropa para caballeros. Elegancia, estilo y comodidad para cada ocasión.</p>
+      </a>
+  </div>
+  <div class="box">
+      <a href="dama.html" target="_blank">
+          <img src="./imagenes/Playera manga normal DAMA frente.jpg" alt="Playeras de Dama">
+          <h1>DAMA</h1>
+          <p>👩🏻</p>
+          <p>Explora las últimas tendencias en moda femenina. Encuentra prendas que destacan tu personalidad y estilo único.</p>
+      </a>
+  </div>
+  <div class="box">
+      <a href="ninos.html" target="_blank">
+          <img src="./imagenes/Playera manga normal NIÑOS frente.jpg" alt="Playeras de niños">
+          <h1>NIÑOS</h1>
+          <p>👧🏻👦🏻</p>
+          <p>Ropa divertida y cómoda para los más pequeños. ¡Deja que jueguen y disfruten con estilo!</p>
+      </a>
+  </div>
+  <div class="box">
+      <a href="bebe.html" target="_blank"> 
+          <img src="./imagenes/Pañalero frente.jpg" alt="Pañaleros Bebé">
+          <h1>BEBÉ</h1>
+          <p>👶🏻</p>
+          <p>Encuentra las prendas más tiernas y suaves para los más pequeños de la familia.</p>
+      </a>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Reproductor de audio para la canción -->
+<div class="audio-container">
+  <audio controls autoplay loop>
+    <source src="./audio/Daft Punk - Around The World.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+
+<!-- Pie de página -->
+<footer class="footer">
+  <div class="footer-video-background">
+    <video autoplay muted loop playsinline>
+      <source src="./imagenes/galaxia.mp4" type="video/mp4">
+    </video>
+    <div class="footer-content">
+
+      <!-- Logo de pie de página-->
+      <div class="footer-section">
+        <img src="./imagenes/latido cabeza alien.gif" alt="Logo" class="footer-logo">
+      </div>
+
+      <!-- Políticas -->
+      <div class="footer-section">
+        <h3>Políticas</h3>
+        <p><a href="#">Política de Privacidad</a></p>
+        <p><a href="#">Términos y Condiciones</a></p>
+      </div>
+
+      <!-- Contacto -->
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p>Email: <a href="mailto:fanny@example.com">escalerafanny@gmail.com</a></p>
+        <p>Teléfono: <a href="tel:+123456789">+52 (55) 64997018</a></p>
+      </div>
+
+      
+
+      <!-- Redes Sociales y Contacto con iconos -->
+      <div class="footer-section">
+        <div class="social-links">
+          <a href="https://www.facebook.com/fanny.escalera" target="_blank">
+            <img src="./imagenes/facebook-icon.png" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com/escalerafanny" target="_blank">
+            <img src="./imagenes/instagram-icon.png" alt="Instagram" class="social-icon">
+          </a>
+          <a href="https://wa.me/525564997018" target="_blank">
+            <img src="./imagenes/whatsapp-icon.png" alt="WhatsApp" class="social-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Derechos reservados -->
+  <div class="footer-bottom">
+    <p>&copy; 2024 Fanny Escalera. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+  <!--Boostrap de Java-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
